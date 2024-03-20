@@ -1,14 +1,17 @@
 /* UNIVERSAL */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Rubik+Mono+One&display=swap");
+
 :root {
   /* COLORS */
   --primary: #e3e3e3;
-  --secondary: #cecece;
-  --accent: #3e3e3e;
+  --secondary: #5183b8;
+  --accent: #e6e1de;
   --indent: #00000010;
+  --indent-heavy: #00000090;
   --scroll-bar-track: #00000010;
   --scroll-bar-thumb: #00000030;
   --scroll-bar-thumb-hover: #0000009a;
-  --active: #0099ff;
+  --active: #DCB073;
 
   /* ATTRIBUTES */
   --rounded: 1rem;
@@ -43,8 +46,11 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "slnt" 0;
 }
 
 #wrapper {
@@ -184,7 +190,7 @@ figure {
 }
 
 .img-container * {
-  width: 100%;
+  width: auto;
   height: auto;
   overflow: hidden;
 }
@@ -213,7 +219,6 @@ main > figure {
 
 main > figure .img-container {
   display: flex;
-  position: relative;
   justify-content: center;
   align-items: center;
   border-radius: var(--rounded);
@@ -247,8 +252,10 @@ h1 {
   top: 0;
   right: 0;
   left: 0;
-  color: var(--accent);
+  padding: 1rem;
+  color: var(--indent-heavy);
+  font-weight: 1000;
   font-size: 3rem;
   text-align: center;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
